@@ -87,3 +87,24 @@ h {
     font-weight: bold;
     
 }
+
+#peli {
+  display: flex;
+  flex-direction: row;
+}
+
+#vasen {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#oikea {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#raharuutu {
+  background-color: crimson;
+}
