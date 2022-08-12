@@ -28,8 +28,7 @@ body {
     margin: auto;
     margin-top: 5em;
     background-color: white;
-    padding: 30px 0px 90px 0px;
-    max-width: 900px !important; 
+    padding: 30px 0px 90px 0px; 
 }
 
 footer {
@@ -96,6 +95,7 @@ h {
 #vasen {
   display: flex;
   flex-direction: column;
+  margin-right: 10em;
   
 }
 
@@ -107,4 +107,38 @@ h {
 
 #raharuutu {
   background-color: crimson;
+}
+
+#panokset {
+  display: flex;
+  flex-direction: row;
+}
+
+#punajuuri {
+  display: flex;
+  flex-direction: row;
+}
+
+#appelsiini {
+  display: flex;
+  flex-direction: row;
+}
+#banaani {
+  display: flex;
+  flex-direction: row;
+}
+#vesimeloni {
+  display: flex;
+  flex-direction: row;
+}
+
+#voitot {
+  background-color: crimson;
+}
+
+#pelaa {
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
