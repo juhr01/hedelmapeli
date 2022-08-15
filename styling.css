@@ -105,40 +105,62 @@ h {
   
 }
 
+#rullat {
+  background-color: rgb(35, 148, 0);
+  padding: 1em;
+  margin-top: 1em;
+  border-style: solid;
+}
+
 #raharuutu {
-  background-color: crimson;
+  background-color: rgb(35, 148, 0);
+  padding: 1em;
+  border-style: solid;
 }
 
 #panokset {
   display: flex;
   flex-direction: row;
+  padding-bottom:2em;
+  
 }
 
-#punajuuri {
-  display: flex;
-  flex-direction: row;
-}
-
-#appelsiini {
-  display: flex;
-  flex-direction: row;
-}
-#banaani {
-  display: flex;
-  flex-direction: row;
-}
-#vesimeloni {
-  display: flex;
-  flex-direction: row;
-}
 
 #voitot {
-  background-color: crimson;
+  background-color: rgb(35, 148, 0);
+  padding: 1em;
+  border-style: solid;
 }
 
 #pelaa {
-  background-color: green;
+  background-color: orange;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1em;
+  border-style: solid;
+}
+
+#lukot {
+  display: flex;
+  flex-direction: row;
+}
+
+#ykkonen {
+  padding:0.5em;
+}
+
+#kakkonen {
+  padding: 0.5em;
+}
+
+#vitonen {
+  padding: 0.5em;
+}
+
+.voittotausta {
+  background-color: white;
+  margin: 0.5em;
+  border-style: solid;
+  padding:1em;
 }
