@@ -79,7 +79,8 @@ h {
 #vasen {
   display: flex;
   flex-direction: column;
-  margin-right: 5em;
+  margin-right: 1em;
+  align-items: center;
   
 }
 
@@ -104,22 +105,38 @@ h {
 
 #rulla1 {
   margin:0.1em;
+  border-style: solid;
 }
 #rulla2 {
   margin:0.1em;
+  border-style: solid;
 }
 #rulla3 {
   margin:0.1em;
+  border-style: solid;
+}
+
+#rulla4 {
+  margin:0.1em;
+  border-style: solid;
 }
 
 #lukko1 {
   margin:0.1em;
+  border-style: solid;
 }
 #lukko2 {
   margin:0.1em;
+  border-style: solid;
 }
 #lukko3 {
   margin:0.1em;
+  border-style: solid;
+}
+
+#lukko4 {
+  margin:0.1em;
+  border-style: solid;
 }
 
 #lukot {
@@ -133,6 +150,7 @@ h {
   background-color: rgb(43, 185, 0);
   padding: 1em 1em 0em 1em;
   border-style: solid;
+  width: 330px;
 }
 
 #panokset {
@@ -149,7 +167,7 @@ h {
 }
 
 #pelaa {
-  background-color: rgb(255, 238, 0);
+  background-color: rgb(255, 217, 0);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -159,6 +177,7 @@ h {
   height: 2em;
   padding-top:0.5em;
   margin-bottom: 1em;
+  width: 200px;
 }
 
 #pelaa:hover {
@@ -167,7 +186,6 @@ h {
 
 #ykkonen {
   padding-right:0.5em;
-  
 }
 
 #kakkonen {
@@ -179,7 +197,51 @@ h {
 }
 
 
-.voittotausta {
+#voittotausta1 {
+  background-color: white;
+  margin: 0.2em;
+  border-style: solid;
+  padding:1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  height: 2em;
+}
+#voittotausta2 {
+  background-color: white;
+  margin: 0.2em;
+  border-style: solid;
+  padding:1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  height: 2em;
+}
+#voittotausta3 {
+  background-color: white;
+  margin: 0.2em;
+  border-style: solid;
+  padding:1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  height: 2em;
+}
+#voittotausta4 {
+  background-color: white;
+  margin: 0.2em;
+  border-style: solid;
+  padding:1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 2em;
+  height: 2em;
+}
+#voittotausta5 {
   background-color: white;
   margin: 0.2em;
   border-style: solid;
@@ -191,29 +253,7 @@ h {
   height: 2em;
 }
 
-#rulla1 {
-  border-style: solid;
-}
 
-#rulla2 {
-  border-style: solid;
-}
-
-#rulla3 {
-  border-style: solid;
-}
-
-#lukko1 {
-  border-style: solid;
-}
-
-#lukko2 {
-  border-style: solid;
-}
-
-#lukko3 {
-  border-style: solid;
-}
 @media screen and (max-width :770px) {
   #peli {
       flex-direction: column;
@@ -233,5 +273,9 @@ h {
 }
 
 #vesimelonivoitto {
+  margin-left: 0.5em;
+}
+
+#sitruunavoitto {
   margin-left: 0.5em;
 }
