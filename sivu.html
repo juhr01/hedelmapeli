@@ -21,16 +21,17 @@
     <div id="peli">
       <div id="vasen">
         <div id="raharuutu">
-          <h2>Rahaa: <span id="saldo">50</span> €</h2>
-          <h2>Panos: <span id="panos">1</span> €</h2>
+          <h2>Rahaa: <span id="rahaTeksti">50</span> €</h2>
+          <h2>Panos: <span id="panosTeksti">1</span> €</h2>
           <div id="panokset">
-            <img src="kuvat/euro.png" height="70" onclick="panos1()" id="ykkonen"
+            <input type="image" src="kuvat/euro.png" height="70" onclick="asetaPanos(1)" id="ykkonen"
               onmouseover="this.src='kuvat/eurohover.png'" onmouseout="this.src='kuvat/euro.png'">
-            <img src="kuvat/2euro.png" height="70" onclick="panos2()" id="kakkonen"
+            <input type="image" src="kuvat/2euro.png" height="70" onclick="asetaPanos(2)" id="kakkonen"
               onmouseover="this.src='kuvat/2eurohover.png'" onmouseout="this.src='kuvat/2euro.png'">
-            <img src="kuvat/5euro.jpg" height="70" onclick="panos5()" id="vitonen"
+            <input type="image" src="kuvat/5euro.jpg" height="70" onclick="asetaPanos(5)" id="vitonen"
               onmouseover="this.src='kuvat/5eurohover.jpg'" onmouseout="this.src='kuvat/5euro.jpg'">
           </div>
+          <p class="normiteksti">Klikkaa vaihtaaksesi panosta</p>
         </div>
 
         <div id="rullalaatikko">
@@ -41,28 +42,21 @@
             <img id="rulla4" src="kuvat/sitruuna.png" width="130" height="130">
           </div>
           <div id="lukot">
-            <div id="lukko1">
-              <img onclick="lukko1()" src="kuvat/lukitse.png" width="124" height="130"
+              <input type="image" id="lukko1" onclick="lukitus(1)" src="kuvat/lukitse.png" width="130" height="130"
                 onmouseover="this.src='kuvat/lukitsehover.png'" onmouseout="this.src='kuvat/lukitse.png'">
-            </div>
-            <div id="lukko2">
-              <img onclick="lukko2()" src="kuvat/lukitse.png" width="124" height="130"
+            
+              <input type="image" id="lukko2" onclick="lukitus(2)" src="kuvat/lukitse.png" width="130" height="130"
                 onmouseover="this.src='kuvat/lukitsehover.png'" onmouseout="this.src='kuvat/lukitse.png'">
-            </div>
-            <div id="lukko3">
-              <img onclick="lukko3()" src="kuvat/lukitse.png" width="124" height="130"
+            
+              <input type="image" id="lukko3" onclick="lukitus(3)" src="kuvat/lukitse.png" width="130" height="130"
                 onmouseover="this.src='kuvat/lukitsehover.png'" onmouseout="this.src='kuvat/lukitse.png'">
-            </div>
-            <div id="lukko4">
-              <img onclick="lukko4()" src="kuvat/lukitse.png" width="124" height="130"
+            
+              <input type="image" id="lukko4" nclick="lukitus(4)" src="kuvat/lukitse.png" width="130" height="130"
                 onmouseover="this.src='kuvat/lukitsehover.png'" onmouseout="this.src='kuvat/lukitse.png'">
-            </div>
           </div>
 
         </div>
-        <div onclick="pelaa()" id="pelaa">
-          <p>PELAA</p>
-        </div>
+        <input type="button" value="PELAA" onclick="pelaa()" id="pelaa">
       </div>
       <div id="oikea">
         <div id="voitot">

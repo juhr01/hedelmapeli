@@ -156,7 +156,7 @@ h {
 #panokset {
   display: flex;
   flex-direction: row;
-  padding-bottom:2em;
+  padding-bottom:0.8em;
   
 }
 
@@ -173,9 +173,9 @@ h {
   justify-content: center;
   margin-top: 0.5em;
   border-style: solid;
+  border-width: 0.1em;
   font-size: 2em;
   height: 2em;
-  padding-top:0.5em;
   margin-bottom: 1em;
   width: 200px;
 }
@@ -278,4 +278,8 @@ h {
 
 #sitruunavoitto {
   margin-left: 0.5em;
+}
+
+.normiteksti {
+  font-weight: normal;
 }
