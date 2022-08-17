@@ -18,26 +18,46 @@ const vv = document.querySelector("#vesimelonivoitto");
 
 
 function asetaPanos(x) {
+    if (saldo < x) {
+        alert('Rahat eivät riitä!');
+    } 
     if (saldo >= x) {
         panos = x;
         panosTeksti.innerHTML = panos;
 
-
-        pv.innerHTML = panos * 2;
-        sv.innerHTML = panos * 4;
-        av.innerHTML = panos * 6;
-        bv.innerHTML = panos * 8;
-        vv.innerHTML = panos * 10;
+        if (lukitseminen == false) {
+            pv.innerHTML = panos * 2;
+            sv.innerHTML = panos * 4;
+            av.innerHTML = panos * 6;
+            bv.innerHTML = panos * 8;
+            vv.innerHTML = panos * 10;
+        }
+        
     }
 }
 
 
 function pelaa() {
-    if (saldo < 1) {
-        document.querySelector("#pelaa").remove();
-        alert('Rahat loppuivat!');
-    } else if (saldo < panos) {
-        alert('Panos on liian suuri!');
+    pv.innerHTML = panos * 2;
+    sv.innerHTML = panos * 4;
+    av.innerHTML = panos * 6;
+    bv.innerHTML = panos * 8;
+    vv.innerHTML = panos * 10;
+
+    document.getElementById("voittotausta1").style.borderColor = "black";
+    document.getElementById("voittotausta2").style.borderColor = "black";
+    document.getElementById("voittotausta3").style.borderColor = "black";
+    document.getElementById("voittotausta4").style.borderColor = "black";
+    document.getElementById("voittotausta5").style.borderColor = "black";
+
+    document.getElementById("voittotausta1").style.borderWidth = "0.1em";
+    document.getElementById("voittotausta2").style.borderWidth = "0.1em";
+    document.getElementById("voittotausta3").style.borderWidth = "0.1em";
+    document.getElementById("voittotausta4").style.borderWidth = "0.1em";
+    document.getElementById("voittotausta5").style.borderWidth = "0.1em";
+    
+    if (saldo < panos) {
+        alert('Rahat eivät riitä!');
     } else {
         saldo = saldo - panos;
         rahaTeksti.innerHTML = saldo;
@@ -48,17 +68,17 @@ function pelaa() {
             lukitseminen = false;
         }
 
-        if (lukko1 = false) {
-            vaihdaKuva("#rulla1");
+        if (lukko1 == false) {
+            vaihdaKuva("rulla1");
         }
-        if (lukko2 = false) {
-            vaihdaKuva("#rulla2");
+        if (lukko2 == false) {
+            vaihdaKuva("rulla2");
         }
-        if (lukko3 = false) {
-            vaihdaKuva("#rulla3");
+        if (lukko3 == false) {
+            vaihdaKuva("rulla3");
         }
-        if (lukko4 = false) {
-            vaihdaKuva("#rulla4");
+        if (lukko4 == false) {
+            vaihdaKuva("rulla4");
         }
 
         tarkistaVoitto();
@@ -88,6 +108,10 @@ function pelaa() {
             document.getElementById("lukko4").src = "kuvat/lukitselukittu.png";
             document.getElementById("lukko4").disabled = true;
           }
+    }
+    if (saldo < 1) {
+        document.querySelector("#pelaa").remove();
+        alert('Rahat loppuivat!');
     }
 }
 
@@ -127,18 +151,28 @@ function tarkistaVoitto() {
         const tiedostoNimi = kuva1.split('/').pop();
         switch (tiedostoNimi) {
             case "munajuuri.png":
+                document.getElementById("voittotausta1").style.borderColor = "red";
+                document.getElementById("voittotausta1").style.borderWidth = "0.3em";
                 saldo = saldo + panos * 2;
                 break;
             case "sitruuna.png":
+                document.getElementById("voittotausta2").style.borderColor = "red";
+                document.getElementById("voittotausta2").style.borderWidth = "0.3em";
                 saldo = saldo + panos * 4;
                 break;
             case "abelsin.png":
+                document.getElementById("voittotausta3").style.borderColor = "red";
+                document.getElementById("voittotausta3").style.borderWidth = "0.3em";
                 saldo = saldo + panos * 6;
                 break;
             case "banan.png":
+                document.getElementById("voittotausta4").style.borderColor = "red";
+                document.getElementById("voittotausta4").style.borderWidth = "0.3em";
                 saldo = saldo + panos * 8;
                 break;
-            case "vesimeloni.png":
+            case "mesiveloni.png":
+                document.getElementById("voittotausta5").style.borderColor = "red";
+                document.getElementById("voittotausta5").style.borderWidth = "0.3em";
                 saldo = saldo + panos * 10;
                 break;
 
